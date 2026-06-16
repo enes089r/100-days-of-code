@@ -23,24 +23,24 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-first_turn = input("Which side want you turn? Just l or r as answer please").upper()
+first_turn = input("Which side do you want to turn? Just l or r as answer please").upper()
 
 if first_turn == "R":
     print("you are lost because there was a lion")
 
 elif first_turn == "L":
-    action = input("concragt, you get rid of lion. now, you saw a see. do you want to swim or just wait? you can anser it as wait or swim").upper()
+    action = input("Congratulations, you got rid of lion. now, you saw a sea. do you want to swim or just wait? you can answer it as wait or swim").upper()
     if action == "SWIM":
-        print ("you chocked, game over")
+        print ("you choked, game over")
     elif action == "WAIT":
-        door_choice = input("you saw 3 door around the forest, do you want go anyone or keep to wait").upper()
+        door_choice = input("you saw 3 door around the forest, do you want to go through one or keep to wait").upper()
         if door_choice == "WAIT":
             print("unfortunately lion found you")
 
         else:
-            which_door = input("from which door do you want to keep, you can answer it as r, l or m").upper()
+            which_door = input("which door do you want to enter, you can answer it as r, l or m").upper()
             if which_door == "M":
-                print("concragt, you win")
+                print("Congratulations, you win")
             else:
-                print("the tiger ,which wait for you behind the door, hunted you.")
+                print("the tiger, which was waiting for you, hunted you.")
 
